@@ -13,6 +13,7 @@ public class DataBase {
 
     public String getValue() {
         return value;
+
     }
 
     public void setValue(String value) {
@@ -25,5 +26,6 @@ public class DataBase {
                 "key='" + key + '\'' +
                 ", value='" + value + '\'' +
                 '}';
+
     }
 }
