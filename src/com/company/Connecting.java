@@ -1,28 +1,30 @@
 package com.company;
 
+import java.security.Key;
+
 public interface Connecting {
 
-        void openConnection();
+        void openConnectionToDB();
 
-        void closeConnection();
+        void closeDB();
 
-        void checkConnection();
+        boolean getConnection();
 
-        void readEntry();
+        KeyValue getDataBaseByIndex(int index);
 
-        void checkTheRecordByIndex();
+        boolean getValueByKey(String key);
 
-        void checkTheRecordByKey();
+        String readValueByKey(String key);
 
-        void readRecordsFromDatabase();
+        KeyValue[] readSetOfValues(int lastIndex, int firstIndex);
 
-        void howManyRecords();
+        int numOfElements();
 
-        void addAnEntry();
+        boolean addElement(KeyValue element);
 
-        void updateTheValueByIndex();
+        boolean updateValueByIndex(int index, String value);
 
-        void updateTheValueByKey();
+        boolean updateValueByKey(String key, String value);
 
     }
 

@@ -2,39 +2,15 @@ package com.company;
 
 public class DataBase {
 
-    private String key;
-    private String value;
+    private KeyValue[] array;
 
-    public DataBase() {
 
+    public KeyValue[] getArray() {
+        return array;
     }
 
-    public DataBase(String key, String value) {
-        this.key = key;
-        this.value = value;
+    public void setArray(KeyValue[] array) {
+        this.array=array;
     }
-
-    public String getKey() {
-        return key;
-    }
-
-    public void setKey(String key) {
-        this.key=key;
-    }
-
-    public String getValue() {
-        return value;
-    }
-
-    public void setValue(String value) {
-        this.value=value;
-    }
-
-    @Override
-    public String toString() {
-        return key + " : " + value;
-    }
-
-
 }
 
